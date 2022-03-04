@@ -3,27 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        ul {
-            padding: 14px 16px;
-            background: #333;
-        }
-        li {
-            display: inline;
-        }
-
-        .menu {
-            color: white;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover {
-            background-color: red;
-        }
-
-    </style>
-
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home_app/style.css' %}">
 </head>
 <body>
     <h1>Django Quick Start Tutorial</h1>
@@ -34,9 +15,17 @@
         <li><a class="menu" href="#">Contact</a></li>
     </ul>
 
+    <p>Most basic application that just writes "Hello World".</p>
+    <p><i>../django_template/django_project/hello_world_app</i></p>
     <p><a href="/helloworld/" target="_blank">Hello World Application</a></p>
+    <p>Most basic application that use templates</p>
+    <p><i>../django_template/django_project/template_app</i></p>
     <p><a href="/template/" target="_blank">Template Application</a></p>
+    <p>Most basic model example with no UI that can be accessed from admin zone</p>
+    <p><i>../django_template/django_project/model_app</i></p>
     <p><a href="/admin/" target="_blank">Data Model Application</a></p>
+    <p>Most basic rest api application with no UI and only </p>
+    <p><i>../django_template/django_project/model_app</i></p>
     <p><a href="/api-root" target="_blank">REST API Application</a></p>
 
 </body>
