@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'hello_world_app',
     'template_app',
     'model_app',
+    'rest_framework',
+    'home_app',
 ]
 
 MIDDLEWARE = [
