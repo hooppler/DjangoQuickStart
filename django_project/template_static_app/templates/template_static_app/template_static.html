@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template_Static</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'template_static_app/style.css' %}">
+    <script src="{% static 'template_static_app/javascript.js' %}"></script>
+</head>
+<body onload="startTime()">
+    <h1 class="center">Template With Static Elements</h1>
+    <p class="center">Django template using CSS, JavaScript, Image</p>
+    <div class="cnt">
+        <div class="center"><img width="170" src="{% static 'template_static_app/clock.png' %}" alt="clock" /></div>
+        <p class="clock" id="txt"></p>
+    </div>
+</body>
+</html>

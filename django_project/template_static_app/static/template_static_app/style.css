@@ -1,0 +1,20 @@
+.cnt {
+    background-color: yellow;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    width: 400px;
+    margin: auto;
+}
+
+.clock {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: opaque;
+    margin: 0px;
+}
+
+.center {
+    text-align: center;
+}

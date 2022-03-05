@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'model_app',
     'rest_framework',
     'home_app',
+    'template_static_app',
 ]
 
 MIDDLEWARE = [
