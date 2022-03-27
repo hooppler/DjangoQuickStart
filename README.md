@@ -79,7 +79,7 @@ Register new application to django in django_project/settings.py:
     ...\
 ]*
 
-Start test server and from browser call:
+Start test server and from browser call:\
 http://local_ip_address:port/helloworld
 
 It shold be printed 'Wello World !!!" from the browser.
