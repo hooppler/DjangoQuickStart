@@ -108,3 +108,96 @@ Start test server and from browser call:\
 http://local_ip_address:port/helloworld
 
 It shold be printed 'Wello World !!!" from the browser.
+
+## Create Template
+It should be created template folder with folder named by application.
+```
+django_template -> django_project -> template_app -> templates -> template_app
+```	   
+
+Render template from view.
+```
+view.py
+
+from django.shortcuts import render
+
+def template_view(request):
+    return render(request, "template_app/template.html")
+```
+
+Create django template in html with support of DTL (Django Template Language)
+```html
+templat.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<h1>Lorem Ipsum</h1>
+	<p>Some text!!!</p>
+</body>
+</html>
+```
+
+## Create Model
+Django model is a class that inherits Model class and represents Object Relational Mapping (ORM) to database.
+
+Class has following format:
+```python
+models.py
+
+from django.db import models
+
+class Person(models.Model):
+    att_char = models.CharField(max_length=N)
+    att_binary = models.BinaryField()
+	att_boolean = models.BooleanField()
+	att_null_boolean = models.NullBooleanField()
+	att_data = models.DateField()
+	att_time = models.TimeField()
+	att_datetime = models.DateTimeField()
+	att_duration = models.DurationField()
+	att_auto = models.AutoField()	
+	att_big_integer = models.BigIntegerField()	
+	att_decimal = models.DecimalField(decimal_places=X,max_digits=Y)	
+	att_float = models.FloatField()	
+	att_integer = models.IntegerField()	
+	att_positive_integer = models.PositiveIntegerField()	
+	att_positive_small_integer = models.PositiveSmallIntegerField()	
+	att_small_integer = options.SmallIntegerField()	
+	att_text = models.TextField()	
+	att_comma_separated_integer = models.CommaSeparatedIntegerField(max_length=50)	
+	att_email = models.EmailField()	
+	att_file = models.FileField()	
+	att_file_path = models.FilePathField()	
+	att_image = models.ImageField()	
+	att_generic_ip_address = models.GenericIPAddressField()	
+	att_slug = models.SlugField()	
+	att_url = models.URLField()	
+	att_uuid = models.UUIDField()	
+	
+    def __str__(self):
+        return 'Object name'
+
+```
+
+In order to be visible from admin zone it should be registered first:
+
+```
+admin.py
+
+from django.contrib import admin
+from myapp.models import Person
+
+admin.site.register(Person)
+```
+
+To use model migrations file should be created and generated database:
+```
+..> python manage.py makemigrations
+..> python manage.py migrate
+```
+
