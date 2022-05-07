@@ -35,7 +35,7 @@ urlpatterns = [
     path('helloworld/', hello_world_view),
     path('template/', template_view),
     path('template_static/', template_static_view),
-    path('form', form_app_view),
+    path('form/', form_app_view),
 
     path('api-root', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
