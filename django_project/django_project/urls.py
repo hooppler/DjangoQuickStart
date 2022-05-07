@@ -19,6 +19,7 @@ from home_app.views import home_view
 from hello_world_app.views import hello_world_view
 from template_app.views import template_view
 from template_static_app.views import template_static_view
+from form_app.views import form_app_view
 from rest_api_app.views import UserViewSet
 from rest_api_app.views import GroupViewSet
 
@@ -34,6 +35,7 @@ urlpatterns = [
     path('helloworld/', hello_world_view),
     path('template/', template_view),
     path('template_static/', template_static_view),
+    path('form', form_app_view),
 
     path('api-root', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
