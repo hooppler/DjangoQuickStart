@@ -30,13 +30,13 @@ router.register(r'users', UserViewSet)
 router.register(r'groups', GroupViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', home_view),
-    path('helloworld/', hello_world_view),
-    path('template/', template_view),
-    path('template_static/', template_static_view),
-    path('form/', form_app_view),
+    path('admin/', admin.site.urls, name='admin'),
+    path('', home_view, name='home'),
+    path('helloworld/', hello_world_view, name='hello_world'),
+    path('template/', template_view, name='template'),
+    path('template_static/', template_static_view, name='template_static'),
+    path('form/', form_app_view, name='form'),
 
-    path('api-root', include(router.urls)),
+    path('api-root', include(router.urls), name='api-root'),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

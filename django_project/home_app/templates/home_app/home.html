@@ -4,74 +4,6 @@
 
 <div style="margin:7px">
 
-    <!--
-    <div class="card" style="width: 18rem; height: 20rem; margin: 3px; display: inline-block; background-color: #f9f9e8;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">HelloWorld!</h5>
-        <p class="card-text">Most basic application that just writes "Hello World".</p>
-          <p class="card-text"><i>../django_template/django_project/hello_world_app</i></p>
-        <a href="/helloworld/" target="_blank" class="btn btn-primary">Helloworld!!!</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem; height: 20rem; margin: 3px; display: inline-block; background-color: #f9f9e8;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Templates</h5>
-        <p class="card-text">Most basic application that use templates</p>
-          <p class="card-text"><i>../django_template/django_project/template_app</i></p>
-        <a href="/template_static/" target="_blank" class="btn btn-primary">Template</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem; height: 20rem; margin: 3px; display: inline-block; background-color: #f9f9e8;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Static Files</h5>
-        <p class="card-text">Most basic template application with static files (css, javascript, image).</p>
-          <p class="card-text"><i>../django_template/django_project/template_static_app</i></p>
-        <a href="/template/" target="_blank" class="btn btn-primary">Static</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem; height: 20rem; margin: 3px; display: inline-block; background-color: #f9f9e8;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Model</h5>
-        <p class="card-text">Most basic model example with no UI that can be accessed from admin zone.</p>
-          <p class="card-text"><i>../django_template/django_project/model_app</i></p>
-        <a href="/admin/" target="_blank" class="btn btn-primary">Model</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem; height: 20rem; margin: 3px; display: inline-block; background-color: #f9f9e8;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Form</h5>
-        <p class="card-text">Basic form example.</p>
-          <p class="card-text"><i>../django_template/django_project/form_app</i></p>
-        <a href="/form/" target="_blank" class="btn btn-primary">Model</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem; height: 20rem; margin: 3px; display: inline-block; background-color: #f9f9e8;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">REST API</h5>
-        <p class="card-text">Most basic rest api application with no UI and only.</p>
-          <p class="card-text"><i>../django_template/django_project/model_app</i></p>
-        <a href="/api-root" target="_blank" class="btn btn-primary">RestApi</a>
-      </div>
-    </div>
-    -->
-
-
-
-
-
-
-
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card" style="background-color: #f9f9e8;">
@@ -80,7 +12,7 @@
             <h5 class="card-title">HelloWorld!</h5>
             <p class="card-text">Most basic application that just writes "Hello World".</p>
               <p class="card-text"><i>../django_template/django_project/hello_world_app</i></p>
-            <a href="/helloworld/" target="_blank" class="btn btn-primary">Helloworld!!!</a>
+            <a href="{% url 'hello_world' %}" target="_blank" class="btn btn-primary">Helloworld!!!</a>
           </div>
         </div>
       </div>
@@ -91,7 +23,7 @@
             <h5 class="card-title">Templates</h5>
             <p class="card-text">Most basic application that use templates</p>
               <p class="card-text"><i>../django_template/django_project/template_app</i></p>
-            <a href="/template/" target="_blank" class="btn btn-primary">Template</a>
+            <a href="{% url 'template' %}" target="_blank" class="btn btn-primary">Template</a>
           </div>
         </div>
       </div>
@@ -102,7 +34,7 @@
             <h5 class="card-title">Static Files</h5>
             <p class="card-text">Most basic template application with static files (css, javascript, image).</p>
               <p class="card-text"><i>../django_template/django_project/template_static_app</i></p>
-            <a href="/template_static/" target="_blank" class="btn btn-primary">Static</a>
+            <a href="{% url 'template_static' %}" target="_blank" class="btn btn-primary">Static</a>
           </div>
         </div>
       </div>
@@ -125,7 +57,7 @@
             <h5 class="card-title">Form</h5>
             <p class="card-text">Basic form example.</p>
               <p class="card-text"><i>../django_template/django_project/form_app</i></p>
-            <a href="/form/" target="_blank" class="btn btn-primary">Model</a>
+            <a href="{% url 'form' %}" target="_blank" class="btn btn-primary">Model</a>
           </div>
         </div>
         </div>
@@ -137,7 +69,7 @@
             <h5 class="card-title">REST API</h5>
             <p class="card-text">Most basic rest api application with no UI and only.</p>
               <p class="card-text"><i>../django_template/django_project/model_app</i></p>
-            <a href="/api-root" target="_blank" class="btn btn-primary">RestApi</a>
+            <a href="{% url 'api-root' %}" target="_blank" class="btn btn-primary">RestApi</a>
           </div>
         </div>
         </div>
