@@ -1,0 +1,17 @@
+ul {
+    padding: 14px 16px;
+    background: #333;
+}
+li {
+    display: inline;
+}
+
+.menu {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: red;
+}
