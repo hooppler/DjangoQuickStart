@@ -1,5 +1,5 @@
 {% extends 'home_app/base.html' %}
-
+{% load static %}
 {% block body %}
 
 <div style="margin:7px">
@@ -7,7 +7,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card" style="background-color: #f9f9e8;">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="{% static 'home_app/HelloWorld.png' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">HelloWorld!</h5>
             <p class="card-text">Most basic application that just writes "Hello World".</p>
@@ -18,7 +18,7 @@
       </div>
       <div class="col">
         <div class="card" style="background-color: #f9f9e8;">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="{% static 'home_app/Templates.png' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Templates</h5>
             <p class="card-text">Most basic application that use templates</p>
@@ -29,7 +29,7 @@
       </div>
       <div class="col">
         <div class="card" style="background-color: #f9f9e8;">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="{% static 'home_app/StaticFiles.png' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Static Files</h5>
             <p class="card-text">Most basic template application with static files (css, javascript, image).</p>
@@ -40,7 +40,7 @@
       </div>
       <div class="col">
         <div class="card" style="background-color: #f9f9e8;">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="{% static 'home_app/Model.png' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Model</h5>
             <p class="card-text">Most basic model example with no UI that can be accessed from admin zone.</p>
@@ -52,7 +52,7 @@
 
         <div class="col">
         <div class="card" style="background-color: #f9f9e8;">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="{% static 'home_app/Form.png' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Form</h5>
             <p class="card-text">Basic form example.</p>
@@ -64,7 +64,7 @@
 
         <div class="col">
         <div class="card" style="background-color: #f9f9e8;">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="{% static 'home_app/RestApi.png' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">REST API</h5>
             <p class="card-text">Most basic rest api application with no UI and only.</p>
