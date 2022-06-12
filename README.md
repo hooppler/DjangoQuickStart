@@ -14,6 +14,8 @@ Django application consists of two parts:
 - Applications
 It follows plugin architecture where within an Django project can be registered manu independent applications.
 
+![Screenshot](media/DjangoQuickStartTutorial.png)
+
 ## Django Installation
 
 **From command line:**  
