@@ -3,7 +3,6 @@
 {% block body %}
 
 <div style="margin:7px">
-
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card" style="background-color: #f9f9e8;">
@@ -49,8 +48,7 @@
           </div>
         </div>
       </div>
-
-        <div class="col">
+      <div class="col">
         <div class="card" style="background-color: #f9f9e8;">
           <img src="{% static 'home_app/Form.png' %}" class="card-img-top" alt="...">
           <div class="card-body">
@@ -60,10 +58,9 @@
             <a href="{% url 'form' %}" target="_blank" class="btn btn-primary">Form</a>
           </div>
         </div>
-        </div>
-
-        <div class="col">
-        <div class="card" style="background-color: #f9f9e8;">
+      </div>
+      <div class="col">
+      <div class="card" style="background-color: #f9f9e8;">
           <img src="{% static 'home_app/RestApi.png' %}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">REST API</h5>
@@ -72,10 +69,19 @@
             <a href="{% url 'api-root' %}" target="_blank" class="btn btn-primary">RestApi</a>
           </div>
         </div>
+      </div>
+      <div class="col">
+        <div class="card" style="background-color: #f9f9e8;">
+          <img src="{% static 'home_app/RestApi.png' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Blog</h5>
+            <p class="card-text">Basic blog example.</p>
+              <p class="card-text"><i>../django_template/django_project/blog_app</i></p>
+            <a href="{% url 'blog' %}" target="_blank" class="btn btn-primary">Blog</a>
+          </div>
         </div>
-
+      </div>
     </div>
-
-
 </div>
+
 {% endblock %}
